@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@font-face{
+    font-family: Abril-Fatface;
+    src: url('../recursos/fontes/AbrilFatface-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
 
 :root {
     --cor-plano-de-fundo-1: #fff0d7;
     --cor-titulo: #421B1A;
     --cor-texto-clara: #faebd7;
+
+    --fonte-titulo: 'Abril-Fatface', cursive;
+
 }
 
 
@@ -12,9 +19,13 @@
 }
 
 h1 {
-    font-family: 'Abril Fatface', cursive;
     color: var(--cor-texto-clara);
     background-color: var(--cor-titulo);
+    font-family: var(--fonte-titulo);
+}
+
+h2{
+    font-size: 24px;
 }
 
 header {
@@ -27,11 +38,13 @@ header {
 main {
     height: 700px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: var(--cor-plano-de-fundo-1);
 }
 
 .painel-principal {
-    margin:auto;
     width: 50%;
     height: 300px;
     display: flex;
@@ -43,17 +56,37 @@ main {
 }
 
 .painel-principal>h2 {
-    font-size: 30px;
+    font-size: 20px;
     color: var(--cor-titulo);
     background-color: var(--cor-plano-de-fundo-1);
 }
 
-.opcoes-login {
+form {
+    height: 500px;
     width: 100%;
+    text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     background-color: var(--cor-plano-de-fundo-1);
+}
+
+fieldset {
+    border: 0px;
+    background-color: var(--cor-plano-de-fundo-1);
+    padding: 10px;
+}
+
+fieldset>label {
+    font-size: 20px;
+    background-color: var(--cor-plano-de-fundo-1);
+}
+
+fieldset>input{
+    background-color: white;
+    border-radius: 10px;
+    height: 20px;
 }
 
 .botao-login {
@@ -70,8 +103,18 @@ main {
 }
 
 a {
-    background-color: brown;
     text-decoration: none;
     color: var(--cor-texto-clara);
     font-size: 20px;
+}
+
+button{
+    border: 0px;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.detalhes{
+    background-color: var(--cor-plano-de-fundo-1);
+    font-size: 14px;
 }
