@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+:root {
+    --cor-plano-de-fundo-1: #fff0d7;
+    --cor-titulo: #421B1A;
+    --cor-texto-clara: #faebd7;
+}
+
+
+* {
+    background-color: var(--cor-titulo);
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    color: var(--cor-texto-clara);
+    background-color: var(--cor-titulo);
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background-color: var(--cor-titulo);
+    text-align: center;
+}
+
+main {
+    height: 700px;
+    display: flex;
+    background-color: var(--cor-plano-de-fundo-1);
+}
+
+.painel-principal {
+    margin:auto;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--cor-plano-de-fundo-1);
+
+}
+
+.painel-principal>h2 {
+    font-size: 30px;
+    color: var(--cor-titulo);
+    background-color: var(--cor-plano-de-fundo-1);
+}
+
+.opcoes-login {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--cor-plano-de-fundo-1);
+}
+
+.botao-login {
+    border: none;
+    background-color: brown;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+a {
+    background-color: brown;
+    text-decoration: none;
+    color: var(--cor-texto-clara);
+    font-size: 20px;
+}
